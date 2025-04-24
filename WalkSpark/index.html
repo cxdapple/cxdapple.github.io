@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkSpark - Step Counter & Fitness Challenge App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2196F3);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2196F3;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #388E3C;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .feature {
+            flex-basis: 30%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #4CAF50;
+        }
+
+        .how-it-works {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            counter-reset: step-counter;
+        }
+
+        .step {
+            flex-basis: 22%;
+            position: relative;
+            padding-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .step:before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-color: #2196F3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-links a {
+            color: #4CAF50;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .feature {
+                flex-basis: 100%;
+            }
+
+            .step {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>WalkSpark</h1>
+            <p class="tagline">Transform Your Steps into Energy. Ignite Your Fitness Journey.</p>
+            <p>Contact us: cxdapple@126.com</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Turn Every Step into a Spark of Achievement</h2>
+        <p>WalkSpark is an innovative fitness app that transforms your daily walking routine into an exciting challenge. By tracking your steps, you earn energy points that propel you up the daily leaderboard, motivating you to stay active and achieve your fitness goals.</p>
+
+        <div class="features">
+            <div class="feature">
+                <h3>Step Tracking</h3>
+                <p>Accurately tracks every step you take throughout the day using your device's built-in sensors and Apple Health integration.</p>
+            </div>
+            <div class="feature">
+                <h3>Energy Conversion</h3>
+                <p>Converts your steps into energy points that you can use to boost your position on the daily leaderboard.</p>
+            </div>
+            <div class="feature">
+                <h3>Daily Leaderboards</h3>
+                <p>Compete with friends and other users on daily leaderboards to stay motivated and push your limits.</p>
+            </div>
+            <div class="feature">
+                <h3>Personalized Goals</h3>
+                <p>Set custom step goals based on your fitness level and gradually increase them as you improve.</p>
+            </div>
+            <div class="feature">
+                <h3>Achievement Badges</h3>
+                <p>Earn badges and rewards as you reach milestones and consistently meet your daily step goals.</p>
+            </div>
+            <div class="feature">
+                <h3>Health Insights</h3>
+                <p>Get valuable insights into your activity patterns and progress over time with detailed statistics.</p>
+            </div>
+        </div>
+
+        <div class="how-it-works">
+            <h2>How WalkSpark Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Download</h3>
+                    <p>Download WalkSpark from the App Store and create your profile.</p>
+                </div>
+                <div class="step">
+                    <h3>Walk</h3>
+                    <p>Start walking! The app automatically tracks your steps throughout the day.</p>
+                </div>
+                <div class="step">
+                    <h3>Earn Energy</h3>
+                    <p>Convert your steps into energy points that power your position on the leaderboard.</p>
+                </div>
+                <div class="step">
+                    <h3>Compete</h3>
+                    <p>Use your energy to climb the daily leaderboard and challenge friends.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Ready to Spark Your Fitness Journey?</h2>
+        <p>Contact us to learn more about WalkSpark and how it can transform your steps into achievements!</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 JSBTec. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <p>Contact Support: cxdapple@126.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
